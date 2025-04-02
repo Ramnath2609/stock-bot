@@ -10,7 +10,6 @@ This is a basic chat bot application that allows user to select an exchange and 
 
 - Clone the repo locally.
 - Navigate into the directory by `cd stock-bot`
-- Checkout to the dev branch by `git checkout dev`
 - Run the following command
 
 ### For Yarn
