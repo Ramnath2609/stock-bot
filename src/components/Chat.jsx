@@ -3,16 +3,28 @@ import { ChatContainer, ChatHeader, ChatMain, FormContainer } from './styles';
 import { Button } from './styles';
 import { Messages } from './Messages';
 
-export function Chat({ data }) {
-  const [messages, setMessages] = React.useState([{
+const initialMessages = [
+  {
     text: "Hello ! Welcome to LSEG, we are here to help you",
     sender: "bot"
-  }, 
+  },
   {
     text: "Please select an exchange",
     sender: "bot",
     choice: "exchange"
-  }]);
+  }
+];
+
+/* Chat component where the chat logic is handled.
+    * It handles the state of the chat messages and the selected exchange.
+    * It handles the logic of displaying messages and options.
+    * It handles the logic of selecting an exchange and a stock.
+    * It handles the logic of displaying the stock price.
+    * It handles the logic of going back to the main menu or the previous menu.
+*/
+
+export function Chat({ data }) {
+  const [messages, setMessages] = React.useState([...initialMessages]);
   const [selectedExchange, setSelectedExchange] = React.useState('');
   const [step, setStep] = React.useState("exchange");
 

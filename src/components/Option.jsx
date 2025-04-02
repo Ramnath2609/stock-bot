@@ -10,6 +10,10 @@ const Wrapper = styled.div`
   }
 `;
 
+/* Options component where the options are displayed.
+    * It handles the logic of displaying options.
+*/
+
 export function Options(props) {
   const { options, onClick } = props
 

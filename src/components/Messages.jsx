@@ -2,6 +2,12 @@ import * as React from 'react'
 import { ChatMessages, Message, MessageHolder } from './styles'
 import { Options } from './Option'
 
+/* Messages component where the messages are displayed.
+    * It handles the logic of displaying messages and options.
+    * It handles the logic of scrolling to the bottom of the chat.
+    * It handles the logic of displaying the stock price.
+*/
+
 export function Messages(props) {
   const { messages, exchange, onSelect, data } = props
   const messagesRef = React.useRef(null);

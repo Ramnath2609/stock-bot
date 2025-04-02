@@ -40,16 +40,6 @@ export const Message = styled.div`
     overflow-wrap: break-word;
 `
 
-export const Meta = styled.div`
-    font-size: 15px;
-    font-weight: bold;
-    color: #7386ff;
-    opacity: 0.7;
-    margin-bottom: 7px;
-    span {
-        color: #777;
-    }
-`
 
 export const FormContainer = styled.div`
     display: grid;
